@@ -1,0 +1,50 @@
+﻿@model UMWebApplication.Models.venue
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>venue</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.venuename)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.venuename)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.venuetype)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.venuetype)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.venuecapacity)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.venuecapacity)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.country)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.country)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new {/* id = Model.venueID */}) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
